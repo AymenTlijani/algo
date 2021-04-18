@@ -1,0 +1,29 @@
+ALGORITHM counter
+VAR
+sentence = "Find .";  
+wordCount = 0;
+vowelsCount = 0;
+counter = 0;
+str[i] = tolower(str[i]); 
+ len = sizeof(str)/sizeof(str[0]);
+c = CHAR; 
+BEGING
+
+do {  
+ counter += 1 ;
+    
+} WHILE (c in sentence == '.')
+
+for i in range(0, len(sentence)-1):  
+      
+      if(sentence[i] == ' ' ,(i > 1)):  
+           wordCount = wordCount + 1;  
+      else  if str[i] in ("a","e","i","o","u"):  
+            vowelsCount = vowelsCount + 1;  
+          
+
+
+console.log("lenth of sentence: " + str(counter)); 
+console.log("Total number of words in sentence ; " + str(wordCount)); 
+console.log("Total number of vowels in sentence: " + str(vowelscount)); 
+END
